@@ -1,0 +1,297 @@
+CSS, belgesiye stil vermek için kullandığımız dildir. 
+CSS, öğelere nasıl görüntülenmesi gerektiğini açıklar. 
+Aynı anda birden fazla web sayfasının düzenini kontrol edebilir. 
+Harici stil sayfaları CSS dosyalarında saklanır.
+
+CSS yazım şekli
+<<Seçici { özellik:değer; } şeklindedir
+<<
+<<p {
+<<      color: red;
+<<      text-align: center;
+<<}
+<<
+<<h1 {
+<<      color:yellow;
+<<      fontSize: 22;
+<<}
+<<
+<<<html>
+<<<head>
+<<<title>Deneme</title>
+<<<style>
+<<        h1 {
+<<            background-color: yellow;
+<<            color: black;
+<<        }
+<<        h2 {
+<<              color: black;
+<<			  background-color: orange;
+<<			  font-size: 33;
+<<        }
+<<</style>
+<<</head>
+<<<body>
+<<<h1>Bu benim tarzım</h2>
+<<<h2>Bu benim yeni tarzım</h2>
+<<</body>
+<<</html>
+
+02-CSS Ekleme
+CSS Ekleme Yolları
+CSS eklemenin üç farklı yolu vardır. Bunlar, sayfa içinde, satır içinde ve harici dosyadadır.
+
+Harici dosyadan css
+<<<link rel="stylesheet" href="mystyle.css">
+<<
+<<Satır içi css
+<<<p style="color:yellow;">Sarı paragraf</p>
+<<
+<<Sayfa içinde css 
+<<body {
+<<          background-color: lightblue;
+<<      }
+<<  
+<<h1 {
+<<          color: navy;
+<<          margin-left: 20px;
+<<  }
+
+
+Css background özelliği ile öğenin sayfanın arkaplanı özellikleri değiştirilebilir. 
+Arkaplan rengi, resmi pozisyonu gibi birçok ayar atanabilir.
+
+Arkaplan Rengi
+<<background-color
+<<
+<<Arkaplan Resmi
+<<background-image
+<<
+<<Arkaplan Tekrarı(Yatay ve dikey yönde)
+<<background-repeat
+<<no-repeat, repeat-x, repeat-y
+<<
+<<Arkaplanın içerikle beraber kaydırılması ve sabit kalmasını belitir.
+<<background-attachment
+<<background-attachment: scroll;
+<<background-attachment: fixed;
+<<
+<<Arkaplanın pozisyonu
+<<background-position
+
+
+/* Tek satırlık Yorum */
+<<
+<</* Çoklu
+<<Yorum Satırı */
+
+
+border-style özelliği ile öğenin kenarlıkları stillendirilebilir.
+<<border-width özelliği ile öğenin kenarlıklarının kalınlığı değiştirilebilir. 
+<<border-color özelliği ile öğenin kenarlıklarının rengi değiştirilebilir. 
+<<kenarlıklar sol, sağ, üst veya alt değerleri ayrı ayrı olarak değiştirilebilir. 
+<<border-radius özelliği ile öğenin kenarlıklarının köşeleri yuvarlanabilir.
+
+margin, öğenin sınırlarının dışından boşluk oluşması için kullanılır.
+margin: 20px 30px 40px 50px olarak kullanılabilir. 
+Üst boşluk 25px sağ boşluk 30px alt boşluk 40px ve sol boşluk 50px olur. 
+Ayrıca margin değeri olarak auto değeri de girebilir. auto değeri öğenin boyutuna göre boşlukları otomatik ayarlayacaktır.
+margin-top
+<<margin-right
+<<margin-bottom
+<<margin-left
+
+padding, öğenin sınırlarından öğeye boşluk verilmesini sağlar. 
+margin öğenin dışı, padding öğenin iç kısmı içindir. 
+margin ile aynı mantıkta çalışır. Piksel, yüzdelik, cm gibi birimlerle çalışabilir.
+
+padding-top:20px;
+<<padding-right:30px;
+<<padding-bottom:30%;
+<<padding-left:10cm;
+
+
+height ve width özellikler, öğenin yüksekliğini ve genişliğini ayarlamak için kullanılır. 
+max-width özelliği, bir elemanın maksimum genişliğini ayarlamak için kullanılır. 
+min-width özelliği, bir elemanın minimum genişliğini ayarlamak için kullanılır. 
+auto, length, yüzdelik, initial(varsayılan), inherit(ana değerden) değerlerini alabilir. 
+
+width:100px;
+<<height:400px;
+
+color: yazı rengi,
+<<background-color: arkaplan rengi;
+<<
+<<Metin Hizalama
+<<text-align
+<<text-align-last
+<<direction
+<<unicode-bidi
+<<vertical-align
+<<
+<<direction: metnin yönü(ltr,rtl)
+<<
+<<Metin dekorasyonu
+<<text-decoration-line
+<<text-decoration-color
+<<text-decoration-style
+<<text-decoration-thickness
+<<text-decoration
+<<
+<<metni düzenleme
+<<text-transform: uppercase;
+<<
+<<Metin boşluğu
+<<text-indent(paragraf girintisi)
+<<letter-spacing(harf boşluğu)
+<<line-height(satır yüksekliği)
+<<word-spacing(kelime boşlukları)
+<<white-space(boşluk işleme)
+<<text-shadow(yazı gölgesi)
+<<text-shadow: 3px 3px 3px yellow, 0 0 25px blue, 0 0 4px orange;
+<<
+<<Yazı tipi
+<<font-family: Arial, Helvetica, sans-serif;
+<<
+<<Yazı stili
+<<font-style:italic
+<<font-weight(yazı ağırlığı)
+<<font-size(yazı boyutu)
+
+Bağlantının farklı halleri için tasarım yapılabilir. 
+Farklı haller için renk, border, arkaplan vb. ayarlamalar yapmak mümkündür. 
+Bunları deneyerek görebilirsiniz.
+
+a:link- normal hali
+<<a:visited  ziyaret edilmiş
+<<a:hover- mouse üzerine geldiğinde
+<<a:active- tıklandığı anda
+
+
+
+list-style-type: none;
+<<list-style-type: circle;
+<<list-style-type: square;
+<<list-style-type: upper-roman;
+<<list-style-type: lower-alpha;
+<<
+<<list-style-position: outside;
+<<list-style-position: inside;
+
+visibility: hidden;
+<<display: none;
+
+
+
+position, bir öğe için kullanılan konumlandırma yönteminin türünü belirtir.
+
+Farklı konum değeri vardır:
+<<
+<<static (Sayfanın akışına göre)
+<<relative (Normaline göre)
+<<fixed (Sabit-kaydırılmaz)
+<<absolute (Üste göre)
+<<sticky (Yapışkan)
+
+Z-index
+Öğelerin hangisinin önden hangisinin arkada olacağını belitir. Artı veya eksi yönde olabilir.
+Düşük değerli olan yüksek değerlinin arkasında yer alır. Yığın mantığında çalışır.
+
+
+
+overflow özelliği, alana sığmayan büyük olan içeriğe ne olacağını kontrol eder.
+
+visible- Varsayılan. Taşma kırpılmaz.
+<<hidden- Taşma kırpılır ve içeriğin geri kalanı görünmez.
+<<scroll- Taşma kırpılır ve içeriğin geri kalanını görmek için bir kaydırma çubuğu eklenir
+<<auto
+
+https://firebasestorage.googleapis.com/v0/b/softwarelessonsincesoy.appspot.com/o/Css3.PNG?alt=media&token=571e5d50-c41e-4d52-abe5-2ab3c2e943dc
+
+
+float, içeriği konumlandırmak ve görüntülerin etrafına metin sarmak için kullanılabilir.
+
+float:left
+<<float:right
+
+
+display: inline-block kendi üst ve alt kenar boşluklarına göredir, 
+ancak display: inline satıra göre ayarlar.
+
+Birleştirici
+üstten gelen seçici (boşluk) (div p)
+<<Alt seçici (>) (div > p)
+<<komşu seçici (+) (div + p)
+<<genel kardeş seçici (~) (div ~ p)
+
+opacity
+0.0 - 1.0 arasında bir değer alabilir. Değer ne kadar düşükse, o kadar şeffaftır
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+background-image: linear-gradient(red, yellow);
+<<background-image: linear-gradient(to right, red , yellow);
+<<background-image: linear-gradient(to bottom right, red, yellow);
+<<background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  
+border-radius Yuvarlak Köşeler
+
+text-shadow özelliği metne gölge uygular.
+<<box-shadow özelliği kutuya gölge uygular.
+
+
+@keyframes
+animasyon belirli zamanlarda kademeli olarak mevcut stilden yeni stile değişecektir.
+
+@keyframes deneme {
+<<      from {background-color: red;}
+<<      to {background-color: yellow;}
+<<}
+<<
+<<div {
+<<      width: 100px;
+<<      height: 100px;
+<<      background-color: red;
+<<      animation-name: deneme;
+<<      animation-duration: 4s;
+<<}
+<<
+<<keyframes deneme {
+<<      0%   {background-color:yellow; left:0px; top:0px;}
+<<      25%  {background-color:yellow; left:100px; top:0px;}
+<<      50%  {background-color:blue; left:100px; top:100px;}
+<<      75%  {background-color:green; left:0px; top:100px;}
+<<      100% {background-color:orange; left:0px; top:0px;}
+<<}
+<<
+<< div {
+<<      width: 100px;
+<<      height: 100px;
+<<      position: relative;
+<<      background-color: red;
+<<      animation-name: example;
+<<      animation-duration: 4s;
+<< }
+
+üzerine geldiğinde etkinleşir.
+.tooltip {
+<<          position: relative;
+<<          display: inline-block;
+<<          border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+<<  }
+
+Yansıma
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  -webkit-box-reflect: right;
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+width=device-width, cihazın ekran genişliğini, sayfanın genişliği yapar.
+
+initial-scale=1.0, sayfa tarayıcı tarafından yüklendiğinde yakınlaştırma seviyesini ayarlar.

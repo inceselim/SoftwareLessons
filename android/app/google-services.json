@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "137144816992",
+    "project_id": "softwarelessonsenincesoy",
+    "storage_bucket": "softwarelessonsenincesoy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137144816992:android:6ca774ad988c28aaf87a05",
+        "android_client_info": {
+          "package_name": "com.softwarelessonsenincesoy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137144816992-kcrr2ke1p5l30oc6aov9rgjha7kjbu7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqSb6V_bAOTvepR5dETYsp5IqK6LAIhyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137144816992-kcrr2ke1p5l30oc6aov9rgjha7kjbu7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

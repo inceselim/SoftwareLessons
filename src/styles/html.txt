@@ -1,0 +1,142 @@
+<p> Paragraf tagıdır.
+<<<hr> Ayraç
+<<<br/> Yeni satır
+<<<pre> Önceden tanımlı yazı
+<<<h1> Başlık(1-6 kadar)
+<<<!-- Yorum Satırı -->
+<<<q> Alıntı
+<<<a> Link
+<<<b>- Kalın yazı
+<<<strong> Önemli metin
+<<<i> İtalik metin
+<<<em> Vurgulanan metin
+<<<mark> İşaretli metin
+<<<small> Daha küçük metin
+<<<del> Silinen metin
+<<<ins> Eklenen metin
+<<<sub> Alt simge metni
+<<<sup> Üst simge metni
+<<<table> Tablo 
+<<<ul> Sırasız liste
+<<<ol> Sıralı liste
+<<<li> liste maddesi
+<<<dl> Açıklama listesi
+<<<dt> Açıklama listesi maddesi
+<<<dd> Açıklama listesi madde açıklaması
+<<<iframe> Satır içi çerçeve
+<<<input type="text">
+<<<input type="radio">
+<<<input type="checkbox">
+<<<input type="send">
+<<<input type="button">
+
+Listeler, bir dizi ilgili öğeyi listelerde gruplandırmasına olanak tanır. 
+Sırasız veya sıralı listeler oluşturulabilir. <ul>Sırasız, <ol>Sıralı ve <dl>Açıklamalı liste oluşturur.
+
+
+<ul>
+<<  <li>Uşak</li>
+<<  <li>Antalya</li>
+<<  <li>İzmir</li>
+<<</ul>
+<<
+<<<ol>
+<<  <li>Urfa</li>
+<<  <li>Elazığ</li>
+<<  <li>Trabzon</li>
+<<</ol>
+<<
+<<<dl>
+<<  <dt>Karahallı</dt>
+<<  <dd>Uşağın bir ilçesidir.</dd>
+<<  <dt>Alanya</dt>
+<<  <dd>Antalyanın bir ilçesidir</dd>
+<<</dl>
+
+
+Class niteliği, bir HTML öğesi için bir sınıf belirtmek için kullanılır.
+Birden çok HTML öğesi aynı sınıfı paylaşabilir. 
+Aynı sınıfı paylaşan taglar aynı özelliklere sahip olur. 
+Aynı etiketler farklı sınıfları barındırabilir.
+
+
+<style>
+<<        .tarz {
+<<            background-color: yellow;
+<<            color: white;
+<<        }
+<<        .ektarz {
+<<              color: black;
+<<        }
+<<</style>
+<<
+<<<h2 class="tarz">Bu benim tarzım</h2>
+<<<h2 class="tarz ek">Bu benim yeni tarzım</h2>
+
+id özelliği, bir HTML öğesi için benzersiz bir kimlik belirtmek için kullanılır. 
+Html taglarında aynı kimliğe sahip birden fazla öğeniz olamaz. 
+id özelliğini kullanabilmek icin id="#idAdı" şeklinde kullanmak gerekir. 
+id özelliği ile sayfa içinde bağlantı oluşturarak ilgili id tagına gidilebilir.
+
+<style>
+<<      #benimId {
+<<          background-color: orangered;
+<<          color: black;
+<<          padding: 30px;
+<<          text-align: center;
+<<      }
+<<</style>
+<<
+<<<h1 id="benimId">Başlk</h1>
+
+
+<input>
+<<<label>
+<<<select>
+<<<textarea>
+<<<button>
+<<<fieldset>
+<<<legend>
+<<<datalist>
+<<<output>
+<<<option>
+<<<optgroup>
+
+
+<input type="button">
+<<<input type="checkbox">
+<<<input type="color">
+<<<input type="date">
+<<<input type="datetime-local">
+<<<input type="email">
+<<<input type="file">
+<<<input type="hidden">
+<<<input type="image">
+<<<input type="month">
+<<<input type="number">
+<<<input type="password">
+<<<input type="radio">
+<<<input type="range">
+<<<input type="reset">
+<<<input type="search">
+<<<input type="submit">
+<<<input type="tel">
+<<<input type="text">
+<<<input type="time">
+<<<input type="url">
+<<<input type="week">
+
+
+var x = document.getElementById("demo");
+<<function getLocation() {
+<<    if (navigator.geolocation) {
+<<          navigator.geolocation.getCurrentPosition(showPosition);
+<<    } else {
+<<          x.innerHTML = "Geolocation is not supported by this browser.";
+<<    }
+<<}
+<<
+<<function showPosition(position) {
+<<      x.innerHTML = "Latitude: " + position.coords.latitude +
+<<      "<br>Longitude: " + position.coords.longitude;
+<<}

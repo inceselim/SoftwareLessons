@@ -1,0 +1,214 @@
+Sass, css ön işlemcisidir. Sass, tekrarı azaltır ve zaman kazandırır. 
+Sass çalışmaya başlamadan önce html ve css konularını bilmek faydalıdır. 
+Sass .scss dosya uzantısına sahiptir. 
+
+sass-lang.com adresinden detaylı bilgi edinebilirsiniz.
+<<
+<<
+<</* Yorum */
+<<//Yorum satırı
+
+sass source/stylesheets/index.scss build/stylesheets/index.css
+<<npm install -g sass
+<<choco install sass
+<<brew install sass/sass/sass
+
+Değişkenlerde birçok farklı değer saklanabilir.
+strings(metin)
+numbers(sayılar)
+colors(renkler)
+booleans(koşul)
+lists(listeler)
+nulls(boş değerler)
+
+$myFont: Helvetica, arial;
+<<$myColor: yellow;
+<<$myFontSize: 22px;
+<<$myWidth: 680px;
+<<
+<<body {
+<<  font-family: $myFont;
+<<  font-size: $myFontSize;
+<<  color: $myColor;
+<<}
+<<
+<<#container {
+<<  width: $myWidth;
+<<}
+
+İçiçe yapısı
+nav {
+<<ul {
+<<       margin: 0;
+<<       padding: 0;
+<<       list-style: none;
+<<  }
+<<li {
+<<       display: inline-block;
+<<  }
+<<a {
+<<      display: block;
+<<      padding: 6px 12px;
+<<      text-decoration: none;
+<<  }
+<<}
+
+Diğer dosyaları @import ile çağırabilirsiniz. Böylece kod tekrarından kaçınmış olunur.
+@import "variables";
+@import "colors";
+
+@mixin kodları yeniden kullanılabilmesini sağlar.
+<<@include kodların birleştirilmesini sağlar.
+<<@extend başka secicinin özelliklerini kullanmayı sağlar.
+
+$color:red;
+<<$width:400px;
+<<
+<<@mixin yazi-stil($color, $width) {
+<<      color: black;
+<<      font-size: 35px;
+<<      font-weight: bold;
+<<}
+<<.importantText {
+<<      @include yazi-stil;
+<<      background-color: orange;
+<<}
+<<
+<<.button  {
+<<      border: none;
+<<      padding: 15px 30px;
+<<      text-align: center;
+<<      font-size: 16px;
+<<}
+<<.button-ext  {
+<<      @extend .button;
+<<      background-color: green;
+<<}
+
+
+Sass dizileri ilk karakter 0 değil, 1'dir. 
+Fonksiyonlar, belirli görevleri yerine getirir.
+
+quote(string)
+<<Metne çift tırnak ekler.
+<<
+<<unquote(string)
+<<Çift tırnakları kaldırır.
+<<
+<<str-index(string, substring)
+<<Metindeki harfin indexini verir.
+<<
+<<str-insert(string, insert, index)
+<<Belirtilen indexe metni ekler.
+<<
+<<unique-id()
+<<Benzersiz id
+<<
+<<str-length(string)
+<<Metnin uzunluğunu verir.
+<<
+<<str-slice(string, start, end)
+<<Metnin içinden kelime seçer.
+<<
+<<to-upper-case(string)
+<<Harfleri büyük yapar.
+<<
+<<to-lower-case(string)
+<<Harfleri küçük yapar.
+
+
+
+Sayı Fonksiyonlar
+
+ceil(number)
+<<Sayıyı yukarı yuvarlar.
+<<
+<<round(number)
+<<En yakın tam sayıya yuvar.
+<<
+<<floor(number)
+<<Sayıyı aşağı yuvarlar.
+<<
+<<abs(number)
+<<Mutlak değer döner.
+<<
+<<max(number...)
+<<Sayılar arasından en büyüğü döner.
+<<
+<<min(number...)
+<<Sayılar arasından en küçüğü döner.
+<<
+<<random()
+<<Rastgele sayı döner.
+<<
+<<random(number)
+<<Sayıyla-1 arası rastgele tamsayı döner.
+<<
+<<percentage(number)
+<<Sayı yüzle çarpılır.
+
+
+
+Liste Fonksiyonlar
+
+append(list, value, [separator])
+<<Liste sonuna öğeyi ekler.
+<<
+<<is-bracketed(list)
+<<Köşeli parantezsiz liste verir.
+<<
+<<length(list)
+<<Liste uzunluğunu verir.
+<<
+<<zip(lists)
+<<Listeyi çok boyutlu hale getirir.
+<<zip(1px 2px 3px, solid dashed dotted, red green blue)
+<<
+<<list-separator(list)
+<<Liste ayraçını verir.
+<<
+<<index(list, value)
+<<Değerin listede değerini verir.
+
+
+Harita Fonksiyonları
+
+map-get(map, key)
+<<Verilen anahtarın değerini döner.
+<<
+<<map-merge(map1, map2)
+<<Haritaları ekler.
+<<
+<<map-remove(map, keys...)
+<<Belirtilen anahtarları kaldırır.
+<<
+<<map-values(map)
+<<Haritanın tüm değerlerini döner.
+<<
+<<map-has-key(map, key)
+<<Verilen anahtarın olup olmadığını döner.(true/false)
+<<
+<<map-keys(map)
+<<Değerleri döner.
+
+
+Seçici Fonksiyonları
+is-superselector(super, sub)
+<<Seçicileri olup olmadığını sorgular.
+<<
+<<selector-append(selectors)
+<<Seçici ekler.
+<<
+<<selector-parse(selector)
+<<Seçicileri parçalar.
+<<
+<<selector-replace(selector, original, replacement)
+<<Yeni seçiciyi eskisiyle değiştirir.
+
+
+
+
+
+
+
+
