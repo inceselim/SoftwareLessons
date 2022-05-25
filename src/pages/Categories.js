@@ -57,8 +57,8 @@ export default function Categories() {
     return (
         <SafeAreaView style={themeValue1.body}>
             <View style={themeValue1.bodyHome}>
-                <ImageBackground source={require("../assets/icon1.png")} resizeMode="cover"
-                    style={{ flex: 1, justifyContent: "center", opacity: 0.8 }}>
+                {/* <ImageBackground source={require("../assets/icon1.png")} resizeMode="cover"
+                    style={{ flex: 1, justifyContent: "center", opacity: 0.8 }}> */}
                     <FlatList
                         data={formatData(allData)} numColumns={3}
                         renderItem={({ item }) => (
@@ -69,7 +69,7 @@ export default function Categories() {
                                     content={item.content} />
                             </TouchableOpacity>
                         )} />
-                </ImageBackground>
+                {/* </ImageBackground> */}
             </View>
         </SafeAreaView>
     )

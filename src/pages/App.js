@@ -88,7 +88,7 @@ function StackScreens({ navigation }) {
         ),
         headerRight: () => {
           return (
-            <Switch value={dark} onValueChange={increaseCounter} />
+            <Switch value={dark} onValueChange={increaseCounter} ios_backgroundColor={dark==false?"#033":"#3dd"} />
           )
         }
         // headerStyle: {backgroundColor: 'papayawhip' }
@@ -192,12 +192,12 @@ export default function App() {
             <MaterialCommunityIcons name="home" color={"#fff"} size={23} />
           ),
         }} />
-        <Tab.Screen name="Categories" component={Categories} options={{
+        {/* <Tab.Screen name="Categories" component={Categories} options={{
           title: 'Categories', headerShown: true,
           tabBarIcon: () => (
             <MaterialCommunityIcons name="shape-outline" color={"#fff"} size={23} />
           ),
-        }} />
+        }} /> */}
         {/* <Tab.Screen name="Settings" component={Settings} options={{
           title: 'Settings', headerShown: true,
           tabBarIcon: () => (

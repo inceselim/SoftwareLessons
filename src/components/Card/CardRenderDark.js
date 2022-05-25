@@ -1,7 +1,7 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { Text, View, Button, Linking, SafeAreaView, Appearance, Image, useColorScheme } from 'react-native';
+import { Text, View, SafeAreaView, Appearance, Image, useColorScheme } from 'react-native';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Card, Provider as PaperProvider, Switch } from 'react-native-paper';
@@ -19,7 +19,6 @@ export default function CardRenderDark(props) {
     const img = props.img
     const title = props.title
 
-    
     const themeValue = dark === false ? cardTheme.Card.primary : cardTheme.Button.secondary
     const themeValue1 = dark === false ? cardLight : cardDark
     console.log("dark", dark)

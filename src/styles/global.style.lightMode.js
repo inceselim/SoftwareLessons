@@ -23,11 +23,11 @@ const lightMode = StyleSheet.create({
         opacity: 0.8,
     },
     button: {
-        backgroundColor: "#003",
+        backgroundColor: "#033",
         marginTop: 5,
         marginBottom: 5,
-        marginLeft: 5,
-        marginRight: 5,
+        marginLeft: 10,
+        marginRight: 10,
         borderRadius: 20,
         padding: 4,
         flexDirection: "row",
@@ -39,8 +39,9 @@ const lightMode = StyleSheet.create({
         fontSize: 15,
         color: "#fff",
         textAlign: "center",
-        paddingTop: 3,
-        paddingBottom: 3,
+        paddingTop: 4,
+        paddingBottom: 4,
+        paddingLeft:10
     },
     buttonIcon:{
         color:"#fff"
@@ -67,20 +68,24 @@ const lightMode = StyleSheet.create({
         fontStyle: "italic",
         color: "#000",
         padding:10,
+        paddingLeft:5,
+        paddingRight:12,
         margin:7,
     },
     contentTextBullet:{
-        fontSize: 14,
-        fontStyle: "italic",
-        color: "#000",
-        paddingLeft:30,
-        margin:1,
-    },
-    contentTextCode:{
-        fontSize: 14,
+        fontSize: 15,
         fontStyle: "italic",
         color: "#000",
         paddingLeft:35,
+        paddingRight:12,
+        margin:1,
+    },
+    contentTextCode:{
+        fontSize: 15,
+        fontStyle: "italic",
+        color: "#000",
+        paddingLeft:35,
+        paddingRight:12,
         margin:1,
     },
     img1: {
@@ -89,7 +94,7 @@ const lightMode = StyleSheet.create({
         resizeMode: 'contain',
         alignSelf: 'center',
         backgroundColor:"#fff",
-        padding:10,
+        padding:12,
     },
 });
 export default lightMode;

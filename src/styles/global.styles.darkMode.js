@@ -24,8 +24,8 @@ const darkMode = StyleSheet.create({
         backgroundColor: "#fff",
         marginTop: 5,
         marginBottom: 5,
-        marginLeft: 5,
-        marginRight: 5,
+        marginLeft: 10,
+        marginRight: 10,
         borderRadius: 20,
         padding: 4,
         flexDirection: "row",
@@ -37,8 +37,9 @@ const darkMode = StyleSheet.create({
         fontSize: 15,
         color: "#000",
         textAlign: "center",
-        paddingTop: 3,
-        paddingBottom: 3,
+        paddingTop: 4,
+        paddingBottom: 4,
+        paddingLeft:10
     },
     buttonIcon:{
         color:"#003"
@@ -48,7 +49,7 @@ const darkMode = StyleSheet.create({
         fontWeight: "bold",
         fontStyle: "italic",
         fontSize: 23,
-        padding: 10,
+        padding: 13,
         margin:2,
         color:"#fff"
     },
@@ -65,20 +66,24 @@ const darkMode = StyleSheet.create({
         fontStyle: "italic",
         color:"#fff",
         padding:10,
+        paddingLeft:5,
+        paddingRight:12,
         margin:7,
     },
     contentTextBullet:{
-        fontSize: 14,
+        fontSize: 15,
         fontStyle: "italic",
         color: "#fff",
-        paddingLeft:30,
+        paddingLeft:20,
+        paddingRight:12,
         margin:1
     },
     contentTextCode:{
-        fontSize: 14,
+        fontSize: 15,
         fontStyle: "italic",
         color: "#fff",
-        paddingLeft:35,
+        paddingLeft:25,
+        paddingRight:12,
         margin:1
     },
     img1: {

@@ -58,11 +58,9 @@ export default function Category(props) {
 
     return (
         <SafeAreaView style={themeValue1.body}>
-
-
             <View style={themeValue1.bodyHome}>
-                <ImageBackground source={require("../assets/icon1.png")} resizeMode="cover"
-                    style={{ flex: 1, justifyContent: "center", opacity: 0.8 }}>
+                {/* <ImageBackground source={require("../assets/icon1.png")} resizeMode="cover"
+                    style={{ flex: 1, justifyContent: "center", opacity: 0.8 }}> */}
                     <FlatList numColumns={3}
                         data={categoryData}
                         renderItem={({ item }) => (
@@ -73,10 +71,8 @@ export default function Category(props) {
                                     content={item.content} />
                             </TouchableOpacity>
                         )} />
-                </ImageBackground>
+                {/* </ImageBackground> */}
             </View>
-
-
         </SafeAreaView>
     )
 }

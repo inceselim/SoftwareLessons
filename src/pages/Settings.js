@@ -1,5 +1,5 @@
 
-import { Text, TouchableOpacity, Alert, Button, Linking, Appearance, ScrollView } from 'react-native';
+import { Text, TouchableOpacity, Alert, Button, Linking, View, ScrollView } from 'react-native';
 import React, { useState } from 'react'
 import lightMode from "../styles/global.style.lightMode";
 import darkMode from '../styles/global.styles.darkMode';
@@ -108,8 +108,9 @@ function Settings(props) {
                 {/* <Button style={{ color: colors.primary }} title="arttır" onPress={increaseCounter} /> */}
                 <Text></Text>
             </ScrollView>
-            <B1 />
-            <B2 />
+            <View style={{ alignItems: "center" }}>
+                <B2 />
+            </View>
         </SafeAreaView>
     )
 }

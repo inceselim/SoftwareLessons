@@ -131,14 +131,17 @@ export default function Contents(props, { navigation }) {
             .catch((errorMsg) => console.log(errorMsg));
     };
 
-
     const themeValue1 = dark === false ? lightMode : darkMode
 
     return (
         <SafeAreaView style={themeValue1.body}>
             <ScrollView style={themeValue1.bodyHome}>
                 <Text style={themeValue1.topicText}>{topic1}</Text>
-                <Text style={themeValue1.contentText}>{content1}</Text>
+                {!content1 ? (null)
+                    : (
+                        <Text style={themeValue1.contentText}>{content1}</Text>
+                    )}
+
                 {!code1S ? (null)
                     : (
                         code1S?.map(item => (

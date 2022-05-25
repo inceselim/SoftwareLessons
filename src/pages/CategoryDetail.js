@@ -48,12 +48,8 @@ export default function CategoryDetail(props) {
 
     return (
         <SafeAreaView style={themeValue1.body}>
-
-            <ImageBackground source={require("../assets/icon1.png")} resizeMode="cover"
-                style={{
-                    flex: 1,
-                    justifyContent: "center", opacity: 0.8
-                }}>
+            {/* <ImageBackground source={require("../assets/icon1.png")} resizeMode="cover"
+                style={{ flex: 1, justifyContent: "center", opacity: 0.8 }}> */}
                 <View style={themeValue1.bodyHome}>
                     <FlatList
                         data={allData}
@@ -82,8 +78,7 @@ export default function CategoryDetail(props) {
                                 <MaterialCommunityIcons name="greater-than" style={themeValue1.buttonIcon} size={21} />
                             </TouchableOpacity>
                         )} /></View>
-            </ImageBackground>
-
+                {/* </ImageBackground> */}
         </SafeAreaView>
     )
 }

@@ -5,42 +5,30 @@ import { StyleSheet, Dimensions } from "react-native"
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-const windowWidth1 = windowWidth - 50
-const windowHeight1 = windowHeight / 6
+const windowWidth1 = windowWidth - 55
+const windowHeight1 = windowHeight / 8
 
-const imgHeight = windowHeight1;
+const imgHeight = windowHeight/8;
 const imgWidth = windowWidth1;
 
 const cardLight = StyleSheet.create({
     container: {
         backgroundColor: "#ffffff",
-        marginLeft:10,
-        marginRight:3,
-        marginBottom:5,
-        marginTop:5,
-        paddingTop:5,
-        height : windowHeight1,
-        width : windowWidth1/3,
-        borderRadius: 9,
-        opacity:1,
+        marginLeft: 6,
+        marginRight: 6,
+        marginBottom: 8,
+        marginTop: 12,
+        height: windowHeight1,
+        width: windowWidth1 / 3,
+        borderRadius: 29,
+        opacity: 1,
     },
-    cardTopic:{
-        flex:1,
-        fontSize:21,
-        marginTop:1,
-        marginBottom:0,
-        color:"#193498",
-        textAlign: "center",
-        fontWeight: "bold",
-        fontStyle: "italic",
-    },
-    cardImg:{
-        height : imgHeight,
-        width : imgWidth/3,
-        resizeMode:"contain",
-    },
-    cardBtn:{
-        backgroundColor:"#1597E5",
+    cardImg: {
+        height: imgHeight,
+        width: imgWidth / 3-15,
+        resizeMode: "contain",
+        borderRadius: 29,
+        alignSelf:"center"
     },
 })
 

@@ -44,8 +44,8 @@ export default function Detail(props) {
     return (
         <SafeAreaView style={themeValue1.body}>
             <View style={themeValue1.bodyHome}>
-                <ImageBackground source={require("../assets/icon1.png")} resizeMode="cover"
-                    style={{ flex: 1, justifyContent: "center", opacity: 0.8 }}>
+                {/* <ImageBackground source={require("../assets/icon1.png")} resizeMode="cover"
+                    style={{ flex: 1, justifyContent: "center", opacity: 0.8 }}> */}
                     <FlatList
                         data={allData}
                         renderItem={({ item }) => (
@@ -75,7 +75,7 @@ export default function Detail(props) {
                                 <MaterialCommunityIcons name="greater-than" style={themeValue1.buttonIcon} size={21} />
                             </TouchableOpacity>
                         )} />
-                </ImageBackground>
+                {/* </ImageBackground> */}
             </View>
 
         </SafeAreaView>

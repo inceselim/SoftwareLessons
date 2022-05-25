@@ -20,7 +20,7 @@ const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
 const imgHeight = windowWidth;
-const imgWidth = windowHeight/2;
+const imgWidth = windowHeight;
 
 
 const cardTheme = {
